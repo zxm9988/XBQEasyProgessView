@@ -1,0 +1,2 @@
+# XBQEasyProgessView
+IBDesignable ProgessView
