@@ -7,6 +7,6 @@ IBDesignable ProgessView
 **copy** XBQEasyProgessView.h/XBQEasyProgessView.m in your project
 
 ## usage
-[preview]()
+![preview](https://github.com/zxm9988/XBQEasyProgessView/blob/master/XBQProgressViw图片.png)
 
 
