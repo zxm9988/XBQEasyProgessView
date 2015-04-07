@@ -95,7 +95,9 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="tNw-db-659"/>
-                                    <constraint firstAttribute="width" constant="200" id="wWa-Rh-1Tu"/>
+                                    <constraint firstAttribute="width" constant="200" id="wWa-Rh-1Tu">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="320"/>
+                                    </constraint>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
@@ -114,15 +116,14 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="44" y="52" width="320" height="54"/>
-                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="cmK-1k-1Tk" firstAttribute="top" secondItem="0ax-KQ-hho" secondAttribute="bottom" constant="32" id="VHx-Rt-AXA"/>
-                            <constraint firstItem="cmK-1k-1Tk" firstAttribute="leading" secondItem="wtw-9b-FdP" secondAttribute="leadingMargin" constant="50" id="isQ-fF-r5T"/>
+                            <constraint firstItem="cmK-1k-1Tk" firstAttribute="leading" secondItem="wtw-9b-FdP" secondAttribute="leadingMargin" constant="50" id="isQ-fF-r5T">
+                                <variation key="heightClass=regular-widthClass=compact" constant="28"/>
+                            </constraint>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
