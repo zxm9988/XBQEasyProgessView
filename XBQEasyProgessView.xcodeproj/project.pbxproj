@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D53262551AD3AF960009F0EC /* XBQEasyProgessView.m in Sources */ = {isa = PBXBuildFile; fileRef = D53262541AD3AF960009F0EC /* XBQEasyProgessView.m */; };
 		D537A3B51ABA712600FE22EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D537A3B41ABA712600FE22EE /* main.m */; };
 		D537A3B81ABA712600FE22EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D537A3B71ABA712600FE22EE /* AppDelegate.m */; };
 		D537A3BB1ABA712600FE22EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D537A3BA1ABA712600FE22EE /* ViewController.m */; };
@@ -14,7 +15,6 @@
 		D537A3C01ABA712600FE22EE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D537A3BF1ABA712600FE22EE /* Images.xcassets */; };
 		D537A3C31ABA712600FE22EE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D537A3C11ABA712600FE22EE /* LaunchScreen.xib */; };
 		D537A3CF1ABA712600FE22EE /* XBQEasyProgessViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D537A3CE1ABA712600FE22EE /* XBQEasyProgessViewTests.m */; };
-		D537A3DA1ABA733300FE22EE /* XBQEasyProgessView.m in Sources */ = {isa = PBXBuildFile; fileRef = D537A3D91ABA733300FE22EE /* XBQEasyProgessView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D53262531AD3AF960009F0EC /* XBQEasyProgessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBQEasyProgessView.h; sourceTree = "<group>"; };
+		D53262541AD3AF960009F0EC /* XBQEasyProgessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBQEasyProgessView.m; sourceTree = "<group>"; };
 		D537A3AF1ABA712600FE22EE /* XBQEasyProgessView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XBQEasyProgessView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D537A3B31ABA712600FE22EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D537A3B41ABA712600FE22EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -41,8 +43,6 @@
 		D537A3C81ABA712600FE22EE /* XBQEasyProgessViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XBQEasyProgessViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D537A3CD1ABA712600FE22EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D537A3CE1ABA712600FE22EE /* XBQEasyProgessViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBQEasyProgessViewTests.m; sourceTree = "<group>"; };
-		D537A3D81ABA733300FE22EE /* XBQEasyProgessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBQEasyProgessView.h; sourceTree = "<group>"; };
-		D537A3D91ABA733300FE22EE /* XBQEasyProgessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBQEasyProgessView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +88,8 @@
 				D537A3B71ABA712600FE22EE /* AppDelegate.m */,
 				D537A3B91ABA712600FE22EE /* ViewController.h */,
 				D537A3BA1ABA712600FE22EE /* ViewController.m */,
-				D537A3D81ABA733300FE22EE /* XBQEasyProgessView.h */,
-				D537A3D91ABA733300FE22EE /* XBQEasyProgessView.m */,
+				D53262531AD3AF960009F0EC /* XBQEasyProgessView.h */,
+				D53262541AD3AF960009F0EC /* XBQEasyProgessView.m */,
 				D537A3BC1ABA712600FE22EE /* Main.storyboard */,
 				D537A3BF1ABA712600FE22EE /* Images.xcassets */,
 				D537A3C11ABA712600FE22EE /* LaunchScreen.xib */,
@@ -226,7 +226,7 @@
 			files = (
 				D537A3BB1ABA712600FE22EE /* ViewController.m in Sources */,
 				D537A3B81ABA712600FE22EE /* AppDelegate.m in Sources */,
-				D537A3DA1ABA733300FE22EE /* XBQEasyProgessView.m in Sources */,
+				D53262551AD3AF960009F0EC /* XBQEasyProgessView.m in Sources */,
 				D537A3B51ABA712600FE22EE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +420,7 @@
 				D537A3D41ABA712600FE22EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D537A3D51ABA712600FE22EE /* Build configuration list for PBXNativeTarget "XBQEasyProgessViewTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +429,7 @@
 				D537A3D71ABA712600FE22EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

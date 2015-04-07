@@ -13,11 +13,11 @@ IB_DESIGNABLE
 @interface XBQEasyProgessView : UIView
 {
 }
-@property(nonatomic)IBInspectable int maxCount;
-@property(nonatomic)IBInspectable int curCount;
-@property(nonatomic)IBInspectable UIColor *backgroundColor;
-@property(nonatomic)IBInspectable UIColor *lineColor;
+@property (nonatomic) IBInspectable int maxCount;
+@property (nonatomic) IBInspectable int curCount;
+@property (nonatomic) IBInspectable UIColor *backgroundColor;
+@property (nonatomic) IBInspectable UIColor *lineColor;
 @property (nonatomic) IBInspectable CGFloat cornerRadius;
-@property (nonatomic)  CALayer *lineLayer;
+@property (nonatomic) CALayer *lineLayer;
 
 @end
