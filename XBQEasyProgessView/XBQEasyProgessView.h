@@ -10,8 +10,9 @@
 
 
 IB_DESIGNABLE
-@interface XBQEasyProgessView : UIView
-{
+
+
+@interface XBQEasyProgessView : UIView {
 }
 @property (nonatomic) IBInspectable int maxCount;
 @property (nonatomic) IBInspectable int curCount;

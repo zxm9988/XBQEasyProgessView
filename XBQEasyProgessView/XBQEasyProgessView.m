@@ -8,46 +8,54 @@
 IB_DESIGNABLE
 #import "XBQEasyProgessView.h"
 
+
 @implementation XBQEasyProgessView
 //#pragma mark - Inspectable properties
-- (void)setMaxCount:(int)maxCount {
+- (void)setMaxCount:(int)maxCount
+{
     _maxCount = maxCount;
     if (self.lineLayer) {
         [self setupView];
     }
 }
 
-- (void)setCurCount:(int)curCount {
+- (void)setCurCount:(int)curCount
+{
     _curCount = curCount;
     if (self.lineLayer) {
         [self setupView];
     }
 }
 
-- (void)setCornerRadius:(CGFloat)cornerRadius {
+- (void)setCornerRadius:(CGFloat)cornerRadius
+{
     _cornerRadius = cornerRadius;
     [self setupView];
 }
 
-- (void)setBackgroundColor:(UIColor *)backgroundColor {
+- (void)setBackgroundColor:(UIColor *)backgroundColor
+{
     _backgroundColor = backgroundColor;
     [self setupView];
 }
 
-- (void)setLineColor:(UIColor *)lineColor {
+- (void)setLineColor:(UIColor *)lineColor
+{
     _lineColor = lineColor;
     if (self.lineLayer) {
         [self setupView];
     }
 }
 
-- (void)layoutSubviews {
+- (void)layoutSubviews
+{
     // resize your layers based on the view's new bounds
     _lineLayer.frame = self.bounds;
     [self setupView];
 }
 
-- (void)prepareForInterfaceBuilder {
+- (void)prepareForInterfaceBuilder
+{
     [super prepareForInterfaceBuilder];
     _lineLayer = [CALayer layer];
     _lineLayer.frame = self.layer.frame;
@@ -56,7 +64,8 @@ IB_DESIGNABLE
 }
 
 #pragma mark - Overrides
-- (instancetype)initWithFrame:(CGRect)frame {
+- (instancetype)initWithFrame:(CGRect)frame
+{
     self = [super initWithFrame:frame];
     if (self) {
         [self setupDefaultValues];
@@ -66,14 +75,15 @@ IB_DESIGNABLE
 }
 
 #pragma mark - Initializer
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
     self = [super initWithCoder:aDecoder];
     if (self) {
         _lineLayer = [CALayer layer];
         _lineLayer.frame = self.layer.frame;
-        
+
         [self.layer addSublayer:_lineLayer];
-        
+
         [self setupDefaultValues];
         [self setupView];
     }
@@ -81,7 +91,8 @@ IB_DESIGNABLE
 }
 
 #pragma mark - Internal functions
-- (void)setupDefaultValues {
+- (void)setupDefaultValues
+{
     self.backgroundColor = [UIColor whiteColor];
     self.lineColor = [UIColor redColor];
     self.cornerRadius = 2;
@@ -89,7 +100,8 @@ IB_DESIGNABLE
     self.curCount = 50;
 }
 
-- (void)setupView {
+- (void)setupView
+{
     if (self.lineLayer && self.maxCount != 0 && self.curCount != 0) {
         _lineLayer.backgroundColor = self.lineColor.CGColor;
         float a = self.curCount / (float)self.maxCount;
