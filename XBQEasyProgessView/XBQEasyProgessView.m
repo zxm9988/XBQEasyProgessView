@@ -2,7 +2,7 @@
 //  XBQEasyProgessView.m
 //  XBQEasyProgessView
 //
-//  Created by new on 15/3/19.
+//  Created by Xiaobangqaing on 15/3/19.
 //  Copyright (c) 2015年 com.BeeBubble. All rights reserved.
 //
 IB_DESIGNABLE
@@ -96,7 +96,6 @@ IB_DESIGNABLE
         _lineLayer.frame = CGRectMake(0, 0, self.layer.frame.size.width * a, self.layer.frame.size.height);
         _lineLayer.cornerRadius = _cornerRadius;
     }
-    
     self.layer.backgroundColor = self.backgroundColor.CGColor;
     self.layer.cornerRadius = self.cornerRadius;
     [self setNeedsDisplay];
